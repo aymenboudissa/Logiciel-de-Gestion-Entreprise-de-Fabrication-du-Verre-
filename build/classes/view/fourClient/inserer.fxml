@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.fourClient.InsererController">
+   <children>
+      <ImageView fitHeight="26.0" fitWidth="21.0" onMouseClicked="#btnFermer" opacity="0.67" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <image>
+            <Image url="@../../images/index/fermer.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <VBox prefHeight="442.0" prefWidth="435.0" spacing="50.0" style="-fx-border-color: #726d6d; -fx-border-radius: 30px; -fx-background-radius: 30px; -fx-border-width: 0.5px;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Text fill="#4a4949" strokeType="OUTSIDE" strokeWidth="0.0" text="Insérer Fournisseur/Client">
+                     <font>
+                        <Font name="Calibri" size="26.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="47.0" prefWidth="354.0" spacing="10.0">
+                     <children>
+                        <Text fill="#726d6d" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="inputNom" promptText="ecrire son nom" style="-fx-background-radius: 30px; -fx-border-radius: 30px;">
+                           <padding>
+                              <Insets bottom="5.0" left="20.0" right="5.0" top="5.0" />
+                           </padding>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="47.0" prefWidth="354.0" spacing="10.0">
+                     <children>
+                        <Text fill="#726d6d" strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="inputPrenom" promptText="écrire son prénom" style="-fx-background-radius: 30px; -fx-border-radius: 30px;">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </TextField>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="31.0" layoutY="107.0" spacing="10.0">
+               <children>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="47.0" prefWidth="354.0" spacing="10.0">
+                     <children>
+                        <Text fill="#726d6d" strokeType="OUTSIDE" strokeWidth="0.0" text="Num téléphone">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="inputNum" promptText="0540573657" style="-fx-background-radius: 30px; -fx-border-radius: 30px;">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="47.0" prefWidth="354.0" spacing="10.0">
+                     <children>
+                        <Text fill="#726d6d" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="inputAdresse" promptText="Senia,Oran" style="-fx-background-radius: 30px; -fx-border-radius: 30px;">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </TextField>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="31.0" layoutY="209.0" spacing="10.0">
+               <children>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="52.0" prefWidth="192.0" spacing="10.0">
+                     <children>
+                        <Text fill="#726d6d" strokeType="OUTSIDE" strokeWidth="0.0" text="Solde d'Ouverture">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="inputSolde" promptText="xxx" style="-fx-background-radius: 30px; -fx-border-radius: 30px;">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </TextField>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox layoutX="31.0" layoutY="211.0" prefWidth="404.0" spacing="50.0">
+               <children>
+                  <VBox prefHeight="47.0" prefWidth="354.0" spacing="10.0">
+                     <children>
+                        <Text fill="#726d6d" strokeType="OUTSIDE" strokeWidth="0.0" text="Type">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </Text>
+                        <HBox prefHeight="20.0" prefWidth="210.0" spacing="10.0">
+                           <children>
+                              <RadioButton fx:id="rdClient" mnemonicParsing="false" text="Client">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </RadioButton>
+                              <RadioButton fx:id="rdFournisseur" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="98.0" text="Fournisseur">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </RadioButton>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets right="195.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </VBox>
+            <HBox>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <ImageView fitHeight="53.0" fitWidth="143.0" onMouseClicked="#btnInserer" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/achat/inserer.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

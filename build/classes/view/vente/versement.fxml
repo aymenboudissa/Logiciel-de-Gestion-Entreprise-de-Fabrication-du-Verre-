@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="435.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.vente.Verser">
+   <children>
+      <ImageView fitHeight="26.0" fitWidth="18.0" onMouseClicked="#btnFermer" opacity="0.66" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <image>
+            <Image url="@../../images/index/fermer.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <VBox prefHeight="442.0" prefWidth="446.0" spacing="50.0" style="-fx-border-color: #726d6d; -fx-border-radius: 30px; -fx-background-radius: 30px; -fx-border-width: 0.5px;" styleClass="background-white" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Text fill="#726d6d" strokeType="OUTSIDE" strokeWidth="0.0" text="Insérer un versement d'un commande">
+               <font>
+                  <Font name="Calibri" size="26.0" />
+               </font>
+            </Text>
+            <VBox prefHeight="203.0" prefWidth="393.0" spacing="50.0">
+               <children>
+                  <VBox prefHeight="47.0" prefWidth="354.0" spacing="10.0">
+                     <children>
+                        <Text fill="#726d6d" strokeType="OUTSIDE" strokeWidth="0.0" text="N°commande">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="numCmd" editable="false" prefHeight="29.0" prefWidth="216.0" promptText="ecrire une designation" style="-fx-background-radius: 30px; -fx-border-radius: 30px;">
+                           <styleClass>
+                              <String fx:value="background-white" />
+                              <String fx:value="back" />
+                              <String fx:value="border-text-field" />
+                           </styleClass>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets right="202.0" />
+                     </padding>
+                  </VBox>
+                  <HBox spacing="10.0">
+                     <children>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="52.0" prefWidth="216.0" spacing="10.0">
+                           <children>
+                              <Text fill="#726d6d" strokeType="OUTSIDE" strokeWidth="0.0" text="Versement">
+                                 <font>
+                                    <Font name="Calibri" size="15.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="inputVersement" promptText="versement ...." style="-fx-background-radius: 30px; -fx-border-radius: 30px;">
+                                 <styleClass>
+                                    <String fx:value="background-white" />
+                                    <String fx:value="back" />
+                                    <String fx:value="border-text-field" />
+                                 </styleClass>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <ImageView fitHeight="31.0" fitWidth="101.0" onMouseClicked="#btnValider" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/index/valider.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

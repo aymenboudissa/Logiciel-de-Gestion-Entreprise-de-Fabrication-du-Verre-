@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1062.0" stylesheets="@../../style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.humaine.absences.MainController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" spacing="220.0">
+         <children>
+            <Text fill="#6b6b6b" strokeType="OUTSIDE" strokeWidth="0.0" text="Consultation les absences des employés">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="365.0" style="-fx-border-color: black; -fx-border-radius: 20px; -fx-background-radius: 20px; -fx-border-width: 0.3px;" styleClass="background-white">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="42.0" opacity="0.32" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/index/icons8-chercher-30.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="inputRecherche" prefHeight="27.0" prefWidth="303.0" promptText="Rechercher par employe,date_Debut et date_fin" style="-fx-background-color: white;">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets right="30.0" top="30.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="74.0" prefWidth="303.0">
+               <children>
+                  <Button mnemonicParsing="false" onMouseClicked="#btnAbsence" styleClass="background-transparent">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/rh/absence.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button mnemonicParsing="false" onMouseClicked="#btnActualiser" styleClass="background-transparent">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/rh/actualiser.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="64.0" prefWidth="762.0" spacing="10.0">
+               <children>
+                  <Text fill="#5b5555" strokeType="OUTSIDE" strokeWidth="0.0" text="Clé de motif d'absence:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="34.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/rh/typeP.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#66aada" strokeType="OUTSIDE" strokeWidth="0.0" text="Personnel">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="34.0" fitWidth="54.0" layoutX="417.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/rh/typeC.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#63bf86" layoutX="453.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Congé">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="34.0" fitWidth="54.0" layoutX="473.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/rh/typeM.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#fc8f85" layoutX="509.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Malade">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="34.0" fitWidth="54.0" layoutX="528.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/rh/typeR.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#b3bc3d" layoutX="564.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="en Retard">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+
+      <ScrollPane prefHeight="591.0" prefWidth="1062.0">
+         <content>
+            <TableView fx:id="table" prefHeight="604.0" prefWidth="1046.0">
+              <columns>
+                <TableColumn fx:id="columnId" prefWidth="48.0" text="ID" />
+                <TableColumn fx:id="columnEmploye" prefWidth="135.0" text="Employe" />
+                  <TableColumn fx:id="columnTypeAbsence" prefWidth="123.0" text="Type d'absence" />
+                  <TableColumn fx:id="columnJustification" prefWidth="105.0" text="Justification" />
+                  <TableColumn fx:id="columnHeure" prefWidth="96.0" text="Heures" />
+                  <TableColumn fx:id="columnDateDebut" prefWidth="153.0" text="Date de debut" />
+                  <TableColumn fx:id="columnSemaine" prefWidth="138.0" text="Semaine" />
+                  <TableColumn fx:id="columnJour" prefWidth="108.0" text="Nbr Jour" />
+                  <TableColumn fx:id="columnButtons" prefWidth="139.0" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

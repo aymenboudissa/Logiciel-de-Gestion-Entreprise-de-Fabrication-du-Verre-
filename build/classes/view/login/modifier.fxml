@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="888.0" style="-fx-background-radius: 30px;" styleClass="background-white" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.login.ChangeController">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-radius: 30px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="501.0" prefWidth="1000.0">
+               <children>
+                  <ImageView fitHeight="508.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/login/img_login.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="479.0" prefWidth="367.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="TOP_RIGHT">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <Text fill="#655d5d" onMouseClicked="#txtReturn" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="Retour" underline="true">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets right="20.0" />
+                           </padding>
+                        </HBox>
+                        <VBox alignment="CENTER" spacing="40.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="44.0" prefWidth="388.0">
+                                 <children>
+                                    <VBox prefHeight="100.0" prefWidth="288.0">
+                                       <children>
+                                          <Text fill="#514c4c" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom d'utilisateur">
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="Segoe UI" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <HBox alignment="CENTER" prefHeight="36.0" prefWidth="288.0" style="-fx-border-color: #006FFE; -fx-border-radius: 23px;">
+                                             <children>
+                                                <ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../images/login/icons8-utilisateur-30.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <TextField fx:id="inputUser" prefHeight="15.0" prefWidth="249.0" promptText="nom d'utilisateur" styleClass="background-white" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="44.0" prefWidth="388.0">
+                                 <children>
+                                    <VBox prefHeight="100.0" prefWidth="288.0">
+                                       <children>
+                                          <Text fill="#514c4c" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe Actuelle">
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="Segoe UI" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <HBox alignment="CENTER" prefHeight="36.0" prefWidth="288.0" style="-fx-border-color: #006FFE; -fx-border-radius: 23px;">
+                                             <children>
+                                                <ImageView fitHeight="17.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../images/login/icons8-cadenas-50.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <PasswordField fx:id="pwdCurrent" prefWidth="249.0" promptText="mot de passe" styleClass="background-white" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="101.0" prefHeight="44.0" prefWidth="388.0">
+                                 <children>
+                                    <VBox prefHeight="100.0" prefWidth="288.0">
+                                       <children>
+                                          <Text fill="#514c4c" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe nouveau">
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="Segoe UI" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <HBox alignment="CENTER" prefHeight="36.0" prefWidth="288.0" style="-fx-border-color: #006FFE; -fx-border-radius: 23px;">
+                                             <children>
+                                                <ImageView fitHeight="17.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../images/login/icons8-cadenas-50.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <PasswordField fx:id="pwdNew" prefWidth="249.0" promptText="mot de passe" styleClass="background-white" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="36.0" prefWidth="388.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onMouseClicked="#btnUpdate" prefHeight="41.0" prefWidth="288.0" style="-fx-cursor: hand; -fx-background-radius: 15px; -fx-background-color: #ACCAF1;" text="Modifier" textFill="#0b4f9d">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children></VBox>
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="424.0" prefWidth="485.0" stylesheets="@../../style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.stock.PieceDeRechange.InsererConsommation">
+   <children>
+      <HBox alignment="TOP_RIGHT" prefHeight="26.0" prefWidth="485.0">
+         <children>
+            <ImageView fitHeight="19.0" fitWidth="23.0" onMouseClicked="#btnFermer" opacity="0.66" pickOnBounds="true" preserveRatio="true" styleClass="cursor-hand">
+               <image>
+                  <Image url="@../../../images/index/fermer.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="2.0" top="2.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox prefHeight="442.0" prefWidth="435.0" spacing="50.0" style="-fx-border-color: black; -fx-border-radius: 15px; -fx-background-radius: 15px; -fx-border-width: 0.5px;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Text fill="#6b6363" strokeType="OUTSIDE" strokeWidth="0.0" text="Insérer une consommation du produit">
+               <font>
+                  <Font name="Calibri" size="26.0" />
+               </font>
+            </Text>
+            <VBox prefWidth="393.0" spacing="50.0">
+               <children>
+                  <VBox prefHeight="47.0" prefWidth="354.0" spacing="10.0">
+                     <children>
+                        <Text fill="#6b6363" strokeType="OUTSIDE" strokeWidth="0.0" text="piéce de rechange *">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="idPiece" editable="false" style="-fx-background-radius: 30px;">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets right="190.0" />
+                     </padding>
+                  </VBox>
+                  <HBox spacing="10.0">
+                     <children>
+                        <VBox prefHeight="52.0" prefWidth="213.0" spacing="10.0">
+                           <children>
+                              <Text fill="#6b6363" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantité *">
+                                 <font>
+                                    <Font name="Calibri" size="15.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="inputQte" prefHeight="27.0" prefWidth="403.0" promptText="stock initiale" style="-fx-background-radius: 30px; -fx-border-radius: 30px;">
+                                 <padding>
+                                    <Insets bottom="5.0" left="3.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <ImageView fitHeight="31.0" fitWidth="101.0" onMouseClicked="#btnValider" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/index/valider.png" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

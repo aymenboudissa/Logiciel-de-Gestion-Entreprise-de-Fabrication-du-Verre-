@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.achat.MatierePremier.InsererController">
+   <children>
+      <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1062.0" side="BOTTOM" stylesheets="@../../style.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <tabs>
+          <Tab text="Page 01">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="97.0" prefWidth="1058.0" AnchorPane.leftAnchor="50.0">
+                           <children>
+                              <Text fill="#6b6868" strokeType="OUTSIDE" strokeWidth="0.0" text="Insérer un bon d'achat du matière premier">
+                                 <font>
+                                    <Font name="Calibri" size="28.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="491.0" layoutY="302.0" prefHeight="100.0" prefWidth="200.0" spacing="50.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="100.0">
+                           <children>
+                              <VBox prefHeight="469.0" prefWidth="503.0" spacing="100.0" style="-fx-background-radius: 20px;" styleClass="background-white">
+                                 <effect>
+                                    <DropShadow height="5.0" radius="2.0" width="5.0">
+                                       <color>
+                                          <Color red="0.3684210479259491" green="0.35136452317237854" blue="0.35136452317237854" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Fournisseur">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <ComboBox fx:id="cmbFournisseur" prefHeight="32.0" prefWidth="265.0" promptText="Selectionner un fournisseur" style="-fx-border-radius: 23px; -fx-background-radius: 23px; -fx-border-color: #d3d7da;" styleClass="background-white" visibleRowCount="30" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="78.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Livraison">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputLivraison" prefHeight="30.0" prefWidth="228.0" promptText="xxxxxxx" style="-fx-border-radius: 23px; -fx-background-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="146.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Versement">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputVersement" prefHeight="32.0" prefWidth="265.0" promptText="xxxxxx" style="-fx-border-radius: 23px; -fx-background-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets bottom="120.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="469.0" prefWidth="503.0" spacing="30.0" style="-fx-background-radius: 20px;" styleClass="background-white">
+                                 <effect>
+                                    <DropShadow height="5.0" radius="2.0" width="5.0">
+                                       <color>
+                                          <Color red="0.3684210479259491" green="0.35136452317237854" blue="0.35136452317237854" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="68.0" prefWidth="456.0" spacing="20.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Matière premier 1">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <ComboBox fx:id="cmbMatiere1" prefHeight="32.0" prefWidth="265.0" promptText="Selectionner un matière premier " style="-fx-border-radius: 23px; -fx-background-radius: 23px; -fx-border-color: #d3d7da;" visibleRowCount="30">
+                                             <styleClass>
+                                                <String fx:value="background-white" />
+                                                <String fx:value="border-text-field" />
+                                             </styleClass>
+                                          </ComboBox>
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Nbr caisse">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputNbrCaisse1" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-border-radius: 23px; -fx-background-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="78.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Longueur">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputLongueur1" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-border-radius: 23px; -fx-background-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="146.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Largeur">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputLargeur1" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-border-radius: 23px; -fx-background-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="364.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix unitaire">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputPrix1" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-background-radius: 23px; -fx-border-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="1062.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="30.0">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="156.0" onMouseClicked="#btnInserer1" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../images/achat/inserer.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Page 02">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="97.0" prefWidth="1058.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+                           <children>
+                              <Text fill="#db1371" strokeType="OUTSIDE" strokeWidth="0.0" text="Page 02">
+                                 <font>
+                                    <Font name="Calibri" size="28.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="491.0" layoutY="302.0" prefHeight="100.0" prefWidth="200.0" spacing="50.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="100.0">
+                           <children>
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="469.0" prefWidth="503.0" spacing="30.0" style="-fx-background-radius: 20px;" styleClass="background-white">
+                                 <effect>
+                                    <DropShadow height="5.0" radius="2.0" width="5.0">
+                                       <color>
+                                          <Color red="0.3684210479259491" green="0.35136452317237854" blue="0.35136452317237854" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="68.0" prefWidth="456.0" spacing="20.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Matière premier 2">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <ComboBox fx:id="cmbMatiere2" prefHeight="32.0" prefWidth="265.0" promptText="Selectionner un matière premier " style="-fx-border-radius: 23px; -fx-border-color: #d3d7da; -fx-background-radius: 23px;" styleClass="background-white" visibleRowCount="30" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Nbr caisse">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputNbrCaisse2" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-border-radius: 23px; -fx-background-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="78.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Longueur">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputLongueur2" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-border-radius: 23px; -fx-background-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="146.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Largeur">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputLargeur2" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-background-radius: 23px; -fx-border-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="364.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix unitaire">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputPrix2" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-background-radius: 23px; -fx-border-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="469.0" prefWidth="503.0" spacing="30.0" style="-fx-background-radius: 20px;" styleClass="background-white">
+                                 <effect>
+                                    <DropShadow height="5.0" radius="2.0" width="5.0">
+                                       <color>
+                                          <Color red="0.3684210479259491" green="0.35136452317237854" blue="0.35136452317237854" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="68.0" prefWidth="456.0" spacing="20.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Matière premier 3">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <ComboBox fx:id="cmbMatiere3" prefHeight="32.0" prefWidth="265.0" promptText="Selectionner un matière premier " style="-fx-border-radius: 23px; -fx-background-radius: 23px; -fx-border-color: #d3d7da;" styleClass="background-white" visibleRowCount="30" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Nbr caisse">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputNbrCaisse3" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-background-radius: 23px; -fx-border-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="78.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Longueur">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputLongueur3" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-background-radius: 23px; -fx-border-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="146.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Largeur">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputLargeur3" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-background-radius: 23px; -fx-border-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="364.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix unitaire">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputPrix3" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-background-radius: 23px; -fx-border-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="1062.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="30.0">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="156.0" onMouseClicked="#btnInserer2" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../images/achat/inserer.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+            <Tab text="Page 03">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="97.0" prefWidth="1058.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+                           <children>
+                              <Text fill="#db1371" strokeType="OUTSIDE" strokeWidth="0.0" text="Page 03">
+                                 <font>
+                                    <Font name="Calibri" size="28.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="491.0" layoutY="302.0" prefHeight="100.0" prefWidth="200.0" spacing="50.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="100.0">
+                           <children>
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="469.0" prefWidth="503.0" spacing="30.0" style="-fx-background-radius: 20px;" styleClass="background-white">
+                                 <effect>
+                                    <DropShadow height="5.0" radius="2.0" width="5.0">
+                                       <color>
+                                          <Color red="0.3684210479259491" green="0.35136452317237854" blue="0.35136452317237854" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="68.0" prefWidth="456.0" spacing="20.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Matière premier 4">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <ComboBox fx:id="cmbMatiere4" prefHeight="32.0" prefWidth="265.0" promptText="Selectionner un matière premier " style="-fx-border-radius: 23px; -fx-background-radius: 23px; -fx-border-color: #d3d7da;" styleClass="background-white" visibleRowCount="30" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Nbr caisse">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputNbrCaisse4" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-background-radius: 23px; -fx-border-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="78.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Longueur">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputLongueur4" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-background-radius: 23px; -fx-border-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="146.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Largeur">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputLargeur4" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-background-radius: 23px; -fx-border-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="364.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix unitaire">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputPrix4" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-background-radius: 23px; -fx-border-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="469.0" prefWidth="503.0" spacing="30.0" style="-fx-background-radius: 20px;" styleClass="background-white">
+                                 <effect>
+                                    <DropShadow height="5.0" radius="2.0" width="5.0">
+                                       <color>
+                                          <Color red="0.3684210479259491" green="0.35136452317237854" blue="0.35136452317237854" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="68.0" prefWidth="456.0" spacing="20.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Matière premier 5">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <ComboBox fx:id="cmbMatiere5" prefHeight="32.0" prefWidth="265.0" promptText="Selectionner un matière premier " style="-fx-border-radius: 23px; -fx-background-radius: 23px; -fx-border-color: #d3d7da;" styleClass="background-white" visibleRowCount="30" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Nbr caisse">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputNbrCaisse5" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-background-radius: 23px; -fx-border-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="78.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Longueur">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputLongueur5" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-background-radius: 23px; -fx-border-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="146.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Largeur">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputLargeur5" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-background-radius: 23px; -fx-border-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="364.0" prefHeight="68.0" prefWidth="456.0" spacing="50.0">
+                                       <children>
+                                          <Text fill="#1c83f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix unitaire">
+                                             <font>
+                                                <Font name="Calibri" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="inputPrix5" prefHeight="32.0" prefWidth="265.0" promptText="xxxx" style="-fx-background-radius: 23px; -fx-border-radius: 23px;" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="30.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" layoutY="585.0" prefHeight="70.0" prefWidth="1062.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="30.0">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="156.0" onMouseClicked="#btnInserer3" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../images/achat/inserer.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

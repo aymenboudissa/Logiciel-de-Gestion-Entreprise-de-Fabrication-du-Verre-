@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1062.0" spacing="20.0" stylesheets="@../../style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.achat.PieceDeRechange.ConsulterController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" spacing="100.0">
+         <children>
+            <Text fill="#6b6b6b" strokeType="OUTSIDE" strokeWidth="0.0" text="Consultation les bon d'achats de pièce de rechange">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="365.0" style="-fx-border-color: black; -fx-border-radius: 20px; -fx-background-radius: 20px; -fx-border-width: 0.3px;" styleClass="background-white">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="42.0" opacity="0.32" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/index/icons8-chercher-30.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="inputRecherche" prefHeight="20.0" prefWidth="329.0" promptText="rechercher par Fournisseur et Date achat" style="-fx-background-color: white;">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets right="30.0" top="30.0" />
+         </padding>
+      </HBox>
+      <HBox prefWidth="1062.0">
+         <children>
+            <ImageView fitHeight="28.0" fitWidth="128.0" onMouseClicked="#btnActualiser" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@../../../images/vente/actualiser.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <ScrollPane prefHeight="608.0" prefWidth="1062.0">
+         <content>
+            <TableView fx:id="table" prefHeight="604.0" prefWidth="1046.0">
+              <columns>
+                <TableColumn fx:id="columnNumAchat" prefWidth="59.0" text="N°achat" />
+                <TableColumn fx:id="columnFournisseur" prefWidth="140.0" text="Fournisseur" />
+                  <TableColumn fx:id="columnDateAchat" prefWidth="120.0" text="Date achat" />
+                  <TableColumn fx:id="columnVersement" prefWidth="121.0" text="Versement" />
+                  <TableColumn fx:id="columnMontant" prefWidth="138.0" text="Montant" />
+                  <TableColumn fx:id="columnMontantReste" prefWidth="144.0" text="Montant reste" />
+                  <TableColumn fx:id="columnLivraison" prefWidth="122.0" text="Livraison" />
+                  <TableColumn fx:id="columnButtons" prefWidth="202.0" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

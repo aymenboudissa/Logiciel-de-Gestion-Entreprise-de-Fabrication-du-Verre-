@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TabPane prefHeight="700.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.achat.RapportController">
+   <tabs>
+      <Tab closable="false" text="Matière Premier">
+         <content>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="1062.0" spacing="10.0" stylesheets="@../style.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <HBox prefHeight="54.0" prefWidth="1042.0" spacing="40.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="60.0" prefWidth="236.0" style="-fx-background-radius: 15px; -fx-background-color: #a8d2e1;">
+                           <effect>
+                              <DropShadow height="18.0" radius="7.75" width="15.0">
+                                 <color>
+                                    <Color red="0.3803921639919281" green="0.3686274588108063" blue="0.3686274588108063" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantite total">
+                                 <font>
+                                    <Font name="Calibri Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txtQteTotale" fill="WHITE" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13K">
+                                 <font>
+                                    <Font name="Segoe UI" size="32.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="236.0" style="-fx-background-radius: 15px; -fx-background-color: #86cf9c;">
+                           <effect>
+                              <DropShadow height="18.0" radius="7.75" width="15.0">
+                                 <color>
+                                    <Color red="0.3803921639919281" green="0.3686274588108063" blue="0.3686274588108063" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Montant total">
+                                 <font>
+                                    <Font name="Calibri Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txtMontanTotale" fill="WHITE" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="130M">
+                                 <font>
+                                    <Font name="Segoe UI" size="32.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="286.0" layoutY="10.0" prefHeight="60.0" prefWidth="236.0" style="-fx-background-radius: 15px; -fx-background-color: #ee9eba;" styleClass="background-white">
+                           <effect>
+                              <DropShadow height="18.0" radius="7.75" width="15.0">
+                                 <color>
+                                    <Color red="0.3803921639919281" green="0.3686274588108063" blue="0.3686274588108063" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Versement total">
+                                 <font>
+                                    <Font name="Calibri Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txtVersementTotale" fill="WHITE" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20M">
+                                 <font>
+                                    <Font name="Segoe UI" size="32.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="562.0" layoutY="10.0" prefHeight="60.0" prefWidth="236.0" style="-fx-background-radius: 15px; -fx-background-color: #bc65d6;" styleClass="background-white">
+                           <effect>
+                              <DropShadow height="18.0" radius="7.75" width="15.0">
+                                 <color>
+                                    <Color red="0.3803921639919281" green="0.3686274588108063" blue="0.3686274588108063" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Reste total">
+                                 <font>
+                                    <Font name="Calibri Bold" size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txtResteTotale" fill="WHITE" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="110M">
+                                 <font>
+                                    <Font name="Segoe UI" size="32.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="301.0" prefWidth="1042.0" style="-fx-border-radius: 20px; -fx-background-radius: 20px;" styleClass="background-white">
+                     <effect>
+                        <DropShadow height="10.0" radius="4.5" width="10.0">
+                           <color>
+                              <Color red="0.18431372940540314" green="0.18039216101169586" blue="0.18039216101169586" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <BarChart fx:id="barChart1" prefHeight="266.0" prefWidth="1007.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="262.0" prefWidth="1042.0" spacing="10.0">
+                     <children>
+                        <HBox prefHeight="295.0" prefWidth="521.0" style="-fx-background-radius: 20px;" styleClass="background-white" HBox.hgrow="ALWAYS">
+                           <effect>
+                              <DropShadow height="10.0" radius="4.5" width="10.0">
+                                 <color>
+                                    <Color red="0.18431372940540314" green="0.18039216101169586" blue="0.18039216101169586" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <BarChart fx:id="barChart2" prefHeight="262.0" prefWidth="541.0" stylesheets="@../chartProduct.css">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </BarChart>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="295.0" prefWidth="521.0" style="-fx-background-radius: 20px;" styleClass="background-white">
+                           <effect>
+                              <DropShadow height="10.0" radius="4.5" width="10.0">
+                                 <color>
+                                    <Color red="0.18431372940540314" green="0.18039216101169586" blue="0.18039216101169586" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <PieChart fx:id="pieChart" prefHeight="262.0" prefWidth="539.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </Tab>
+      <Tab closable="false" text="Piéce de rechange">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="1062.0" spacing="10.0" stylesheets="@../style.css">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <HBox prefHeight="65.0" prefWidth="1019.0" spacing="40.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="60.0" prefWidth="236.0" style="-fx-background-color: #a8d2e1; -fx-background-radius: 15px;">
+                                 <effect>
+                                    <DropShadow height="18.0" radius="7.75" width="15.0">
+                                       <color>
+                                          <Color red="0.3803921639919281" green="0.3686274588108063" blue="0.3686274588108063" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantite total">
+                                       <font>
+                                          <Font name="Calibri Bold" size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="txtQte1" fill="WHITE" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13K">
+                                       <font>
+                                          <Font name="Segoe UI" size="32.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="236.0" style="-fx-background-color: #86cf9c; -fx-background-radius: 15px;">
+                                 <effect>
+                                    <DropShadow height="18.0" radius="7.75" width="15.0">
+                                       <color>
+                                          <Color red="0.3803921639919281" green="0.3686274588108063" blue="0.3686274588108063" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Montant total">
+                                       <font>
+                                          <Font name="Calibri Bold" size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="txtMontant1" fill="WHITE" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="40M">
+                                       <font>
+                                          <Font name="Segoe UI" size="32.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="286.0" layoutY="10.0" prefHeight="60.0" prefWidth="236.0" style="-fx-background-radius: 15px; -fx-background-color: #ee9eba;">
+                                 <effect>
+                                    <DropShadow height="18.0" radius="7.75" width="15.0">
+                                       <color>
+                                          <Color red="0.3803921639919281" green="0.3686274588108063" blue="0.3686274588108063" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Versement total">
+                                       <font>
+                                          <Font name="Calibri Bold" size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="txtVersement1" fill="WHITE" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30M">
+                                       <font>
+                                          <Font name="Segoe UI" size="32.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="562.0" layoutY="10.0" prefHeight="60.0" prefWidth="236.0" style="-fx-background-color: #bc65d6; -fx-background-radius: 15px;">
+                                 <effect>
+                                    <DropShadow height="18.0" radius="7.75" width="15.0">
+                                       <color>
+                                          <Color red="0.3803921639919281" green="0.3686274588108063" blue="0.3686274588108063" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Reste total">
+                                       <font>
+                                          <Font name="Calibri Bold" size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="txtReste1" fill="WHITE" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10M">
+                                       <font>
+                                          <Font name="Segoe UI" size="32.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="301.0" prefWidth="1042.0" style="-fx-border-radius: 20px; -fx-background-radius: 20px;" styleClass="background-white">
+                           <effect>
+                              <DropShadow height="10.0" radius="4.5" width="10.0">
+                                 <color>
+                                    <Color red="0.18431372940540314" green="0.18039216101169586" blue="0.18039216101169586" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <BarChart fx:id="barChartPiece1" prefHeight="266.0" prefWidth="1007.0">
+                                 <xAxis>
+                                    <CategoryAxis side="BOTTOM" />
+                                 </xAxis>
+                                 <yAxis>
+                                    <NumberAxis side="LEFT" />
+                                 </yAxis>
+                              </BarChart>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="262.0" prefWidth="1042.0" spacing="10.0">
+                           <children>
+                              <HBox prefHeight="295.0" prefWidth="521.0" style="-fx-background-radius: 20px;" styleClass="background-white" HBox.hgrow="ALWAYS">
+                                 <effect>
+                                    <DropShadow height="10.0" radius="4.5" width="10.0">
+                                       <color>
+                                          <Color red="0.18431372940540314" green="0.18039216101169586" blue="0.18039216101169586" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                                 <children>
+                                    <BarChart fx:id="barChartPiece2" prefHeight="262.0" prefWidth="523.0" stylesheets="@../chartProduct.css">
+                                      <xAxis>
+                                        <CategoryAxis side="BOTTOM" />
+                                      </xAxis>
+                                      <yAxis>
+                                        <NumberAxis side="LEFT" />
+                                      </yAxis>
+                                    </BarChart>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="295.0" prefWidth="521.0" style="-fx-background-radius: 20px;" styleClass="background-white">
+                                 <effect>
+                                    <DropShadow height="10.0" radius="4.5" width="10.0">
+                                       <color>
+                                          <Color red="0.18431372940540314" green="0.18039216101169586" blue="0.18039216101169586" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                                 <children>
+                                    <PieChart fx:id="pieChart1" prefHeight="262.0" prefWidth="529.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+   </tabs>
+</TabPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1062.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.vente.ConsulterController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" spacing="80.0">
+         <children>
+            <Text fill="#6b6b6b" strokeType="OUTSIDE" strokeWidth="0.0" text="Consultation les bon commandes de matière premier ">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="365.0" style="-fx-border-color: black; -fx-border-radius: 20px; -fx-background-radius: 20px; -fx-border-width: 0.3px;" styleClass="background-white">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="42.0" opacity="0.32" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/index/icons8-chercher-30.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="inputRecherche" prefHeight="20.0" prefWidth="329.0" promptText="Rechercher par Clinet,date_commande" style="-fx-background-color: white;">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets right="30.0" top="30.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#btnInserer" styleClass="background-transparent">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/vente/commande.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="10.0" layoutY="33.0" mnemonicParsing="false" onMouseClicked="#btnActualiser" styleClass="background-transparent">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/vente/actualiser.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </HBox>
+
+      <ScrollPane prefHeight="591.0" prefWidth="1062.0">
+         <content>
+            <TableView fx:id="table" prefHeight="604.0" prefWidth="1046.0">
+              <columns>
+                <TableColumn fx:id="columnNumCmd" prefWidth="75.0" text="N°cmd" />
+                <TableColumn fx:id="columnClient" prefWidth="154.0" text="Client" />
+                  <TableColumn fx:id="columnDateCmd" prefWidth="122.0" text="Date commande" />
+                  <TableColumn fx:id="columnVersement" prefWidth="111.0" text="Versement" />
+                  <TableColumn fx:id="columnMontant" prefWidth="124.0" text="Montant" />
+                  <TableColumn fx:id="columnMontantReste" prefWidth="123.0" text="Montant reste" />
+                  <TableColumn fx:id="columnLivraison" prefWidth="133.0" text="Livraison" />
+                  <TableColumn fx:id="columnButtons" prefWidth="203.0" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

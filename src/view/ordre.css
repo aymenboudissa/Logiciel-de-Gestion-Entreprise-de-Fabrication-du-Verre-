@@ -1,0 +1,28 @@
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+.table-view .column{
+	-fx-text-fill: #2275D4;
+    -fx-font-size: 12px;
+}
+.tab-pane *.tab-header-area *.tab-header-background{
+ -fx-background-color:transparent;
+}
+.tab-pane:focused .tab:selected .focus-indicator {
+    -fx-border-width: 0 ;
+    -fx-border-color: white;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+}
+.tab:selected{
+	-fx-border-color:#000000;
+	-fx-border-width: 0px 0px 1px 0px;
+	
+}
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #000000;
+    -fx-font-size: 10px;
+    
+    -fx-font-family: "Calibri";
+}

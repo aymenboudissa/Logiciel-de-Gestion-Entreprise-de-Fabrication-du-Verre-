@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane hbarPolicy="NEVER" styleClass="background-transparent" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.vente.RapportController">
+   <content>
+      <AnchorPane prefHeight="700.0" prefWidth="1072.0" styleClass="background-transparent">
+         <children>
+            <VBox layoutX="1.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1004.0" prefWidth="1042.0" spacing="10.0" AnchorPane.bottomAnchor="-152.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <HBox prefHeight="65.0" prefWidth="1042.0" spacing="57.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="100.0" prefWidth="214.0" style="-fx-background-radius: 10px;" styleClass="background-white">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="70.0">
+                                 <children>
+                                    <Text fill="#69b4f5" strokeType="OUTSIDE" strokeWidth="0.0" text="Chiffre d'affaire">
+                                       <font>
+                                          <Font name="Calibri" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="21.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../images/vente/icons8-argent-50.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Text fx:id="txtChiffreAffaire" fill="#6b6868" strokeType="OUTSIDE" strokeWidth="0.0" text="50M">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <effect>
+                              <DropShadow height="18.0" radius="7.75" width="15.0">
+                                 <color>
+                                    <Color red="0.3803921639919281" green="0.3686274588108063" blue="0.3686274588108063" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="214.0" style="-fx-background-radius: 10px;" styleClass="background-white">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+                                 <children>
+                                    <Text fill="#69b4f5" strokeType="OUTSIDE" strokeWidth="0.0" text="Qte Rupture">
+                                       <font>
+                                          <Font name="Calibri" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="21.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../images/vente/icons8-dynamique-positive-30.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER">
+                                 <children>
+                                    <Text fx:id="txtBenifice" fill="#6b6868" strokeType="OUTSIDE" strokeWidth="0.0" text="30M">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <effect>
+                              <DropShadow radius="8.5" width="15.0">
+                                 <color>
+                                    <Color red="0.3815789520740509" green="0.36921295523643494" blue="0.36921295523643494" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="224.0" layoutY="10.0" prefHeight="100.0" prefWidth="214.0" style="-fx-background-radius: 10px;" styleClass="background-white">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="105.0">
+                                 <children>
+                                    <Text fill="#69b4f5" strokeType="OUTSIDE" strokeWidth="0.0" text="Qte vente">
+                                       <font>
+                                          <Font name="Calibri" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="21.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../images/vente/icons8-caddie-50.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Text fx:id="txtQteVente" fill="#6b6868" strokeType="OUTSIDE" strokeWidth="0.0" text="50.5 m2">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <effect>
+                              <DropShadow radius="8.5" width="15.0">
+                                 <color>
+                                    <Color red="0.3815789520740509" green="0.36921295523643494" blue="0.36921295523643494" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="438.0" layoutY="10.0" prefHeight="100.0" prefWidth="214.0" style="-fx-background-radius: 10px;" styleClass="background-white">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="70.0">
+                                 <children>
+                                    <Text fill="#69b4f5" strokeType="OUTSIDE" strokeWidth="0.0" text="Versement totale">
+                                       <font>
+                                          <Font name="Calibri" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="21.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../images/vente/icons8-plus-30.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Text fx:id="txtVersementTotale" fill="#6b6868" strokeType="OUTSIDE" strokeWidth="0.0" text="150M">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <effect>
+                              <DropShadow radius="8.5" width="15.0">
+                                 <color>
+                                    <Color red="0.3815789520740509" green="0.36921295523643494" blue="0.36921295523643494" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="250.0" prefWidth="1011.0" spacing="10.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-radius: 10px;" styleClass="background-white" HBox.hgrow="ALWAYS">
+                           <effect>
+                              <DropShadow height="10.0" radius="4.5" width="10.0">
+                                 <color>
+                                    <Color red="0.28947368264198303" green="0.27339181303977966" blue="0.27339181303977966" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <BarChart fx:id="barChart2" prefHeight="250.0" prefWidth="1147.0">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </BarChart>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets right="15.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="85.0" prefHeight="250.0" prefWidth="1011.0" spacing="10.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-radius: 10px;" styleClass="background-white" HBox.hgrow="ALWAYS">
+                           <effect>
+                              <DropShadow height="10.0" radius="4.5" width="10.0">
+                                 <color>
+                                    <Color red="0.28947368264198303" green="0.27339181303977966" blue="0.27339181303977966" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <LineChart fx:id="lineChart">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </LineChart>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-radius: 10px;" styleClass="background-white" HBox.hgrow="ALWAYS">
+                           <effect>
+                              <DropShadow height="10.0" radius="4.5" width="10.0">
+                                 <color>
+                                    <Color red="0.28947368264198303" green="0.27339181303977966" blue="0.27339181303977966" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <PieChart fx:id="pieChart" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets right="15.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="345.0" prefHeight="250.0" prefWidth="1011.0" spacing="10.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="250.0" prefWidth="508.0" style="-fx-background-radius: 10px;" styleClass="background-white">
+                           <effect>
+                              <DropShadow height="10.0" radius="4.5" width="10.0">
+                                 <color>
+                                    <Color red="0.28947368264198303" green="0.27339181303977966" blue="0.27339181303977966" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <BarChart fx:id="barChart4" prefHeight="250.0" prefWidth="529.0" stylesheets="@../chartProduct3.css">
+                                 <xAxis>
+                                    <CategoryAxis side="BOTTOM" />
+                                 </xAxis>
+                                 <yAxis>
+                                    <NumberAxis side="LEFT" />
+                                 </yAxis>
+                              </BarChart>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="508.0" style="-fx-background-radius: 10px;" styleClass="background-white">
+                           <effect>
+                              <DropShadow height="10.0" radius="4.5" width="10.0">
+                                 <color>
+                                    <Color red="0.28947368264198303" green="0.27339181303977966" blue="0.27339181303977966" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <VBox prefHeight="250.0" prefWidth="525.0">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="36.0" prefWidth="484.0">
+                                       <children>
+                                          <Text fill="#6f6b6b" strokeType="OUTSIDE" strokeWidth="0.0" text="Les clients qui sont atteindre la remise">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </Text>
+                                          <HBox prefHeight="26.0" prefWidth="70.0">
+                                             <HBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                             </HBox.margin>
+                                          </HBox>
+                                          <HBox alignment="CENTER" layoutX="319.0" layoutY="15.0" prefHeight="29.0" prefWidth="181.0" style="-fx-background-color: #f5f4f4; -fx-background-radius: 20px;">
+                                             <HBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                             </HBox.margin>
+                                             <children>
+                                                <ImageView fitHeight="25.0" fitWidth="22.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../images/index/icons8-chercher-30.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <TextField prefHeight="25.0" prefWidth="147.0" promptText="Rechercher par client" styleClass="background-transparent" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                    <TableView fx:id="table" prefHeight="214.0" prefWidth="509.0">
+                                      <columns>
+                                        <TableColumn fx:id="columnNom" prefWidth="75.0" text="Nom" />
+                                        <TableColumn fx:id="columnPrenom" prefWidth="75.0" text="Prénom" />
+                                          <TableColumn fx:id="columnAchat" prefWidth="75.0" text="L'achat totale" />
+                                          <TableColumn fx:id="columnStatus" prefWidth="75.0" text="status" />
+                                      </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets right="15.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
